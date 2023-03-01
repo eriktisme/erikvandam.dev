@@ -4,3 +4,4 @@ cdk_out
 *.d.ts
 *.js
 pnpm-lock.yaml
+dist

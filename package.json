@@ -5,9 +5,11 @@
     "app": "bin/app.ts"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "tsc --noEmit && vite build",
     "cdk": "cdk",
+    "dev": "vite",
     "lint": "eslint --ext .ts .",
+    "preview": "vite preview",
     "test": "jest --passWithNoTests"
   },
   "dependencies": {
@@ -20,14 +22,18 @@
     "@types/node": "10.17.27",
     "@typescript-eslint/eslint-plugin": "^5.10.1",
     "@typescript-eslint/parser": "^5.10.1",
+    "autoprefixer": "^10.4.13",
     "aws-cdk": "^2.66.0",
     "eslint": "^8.8.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
     "jest": "^29.3.1",
+    "postcss": "^8.4.21",
     "prettier": "^2.5.1",
+    "tailwindcss": "^3.2.7",
     "ts-jest": "^29.0.5",
     "ts-node": "^10.9.1",
-    "typescript": "^4.9.5"
+    "typescript": "^4.9.5",
+    "vite": "^4.1.4"
   }
 }
